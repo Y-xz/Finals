@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_chat"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    >
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/chat_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="@color/tab">
+
+        <Button
+            android:id="@+id/btn_chat_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="←"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/tv_chat_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/btn_chat_henote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:text="他的小纸条"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+    <!--标题栏-->
+
+    <!--聊天-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_above="@id/chat_bottom_ll"
+        android:layout_below="@id/chat_top_rl"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chatmsg_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--聊天-->
+
+    <!--底部-->
+    <LinearLayout
+        android:id="@+id/chat_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+        <EditText
+            android:id="@+id/et_chatinput"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_gravity="bottom"/>
+        <Button
+            android:id="@+id/btn_chatsend"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="发送"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+    <!--底部栏-->
+
+</RelativeLayout>

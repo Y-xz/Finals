@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_background">
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/tab">
+
+        <Button
+            android:id="@+id/btn_gender_set_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity=""
+            android:text="←"
+            android:textSize="18sp"
+            android:textColor="@color/page_background"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/btn_gender_set_submit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#c8dfff"
+            android:background="@null"/>
+    </RelativeLayout>
+    <!--标题栏-->
+    <!--正文-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <!--性别-->
+        <RadioGroup
+            android:id="@+id/rg_set_gander"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_below="@id/et_r_nickname"
+            android:layout_alignLeft="@id/et_r_nickname"
+            android:orientation="vertical">
+
+            <!--男 male-->
+            <RadioButton
+                android:id="@+id/rb_set_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="男"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab"/>
+            <!--女 female-->
+            <RadioButton
+                android:id="@+id/rb_set_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="女"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab"/>
+            <!--保密 secrecy-->
+            <RadioButton
+                android:id="@+id/rb_set_secrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="保密"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

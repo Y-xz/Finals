@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab"
+    >
+<!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/tab">
+
+        <Button
+            android:id="@+id/btn_addnoteback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="←"
+            android:textSize="18sp"
+            android:textColor="@color/page_background"
+            android:background="@null"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="5dp"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/btn_addsendnote"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="贴出"
+                android:textColor="@color/page_background"
+                android:background="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--标题栏-->
+<!--正文-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_addnote"
+            android:background="@color/page_background"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:gravity="top"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="15dp"
+            android:textColor="@color/tab"
+            android:hint="写一张小纸条吧~"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="盼风吹，等风归"
+            android:textSize="16dp"
+            android:textColor="#c8dfff"/>
+    </RelativeLayout>
+<!--正文-->
+
+
+
+
+
+</LinearLayout>

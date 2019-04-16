@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+    <View
+        android:id="@+id/register_view"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_r_nickname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/register_view"
+        android:layout_alignLeft="@id/register_view"
+        android:background="@null"
+        android:hint="设置昵称"
+        android:textColorHint="@color/text_button"/>
+
+    <RadioGroup
+        android:id="@+id/rg_r_gander"
+        android:paddingTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/et_r_nickname"
+        android:layout_alignLeft="@id/et_r_nickname"
+        android:orientation="horizontal">
+
+        <!--男 male-->
+        <RadioButton
+            android:id="@+id/rb_r_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"/>
+        <!--女 female-->
+        <RadioButton
+            android:id="@+id/rb_r_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+        <!--保密 secrecy-->
+        <RadioButton
+            android:id="@+id/rb_r_secrecy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保密"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/et_r_password"
+        android:paddingTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/rg_r_gander"
+        android:layout_alignLeft="@id/rg_r_gander"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:hint="密码"
+        android:textColorHint="@color/text_button"/>
+    <EditText
+        android:id="@+id/et_r_cpassword"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/et_r_password"
+        android:layout_alignLeft="@id/et_r_password"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:hint="确认密码"
+        android:textColorHint="@color/text_button"/>
+    <Button
+        android:id="@+id/btn_r_register"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_r_cpassword"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_btn_login_release"
+        android:text="提交并注册"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn_r_register"
+        android:layout_centerHorizontal="true"
+        >
+        <CheckBox
+            android:id="@+id/cb_r_treaty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:checked="true"
+            />
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="同意"
+            android:textSize="10dp"
+            />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="《服务协议》"
+            android:textSize="10dp"
+            android:textColor="#ff5faf"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

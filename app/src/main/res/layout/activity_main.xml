@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_background">
+
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_main_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_main"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_button"
+        android:textSize="17dp"
+        android:text="说不出的话来这里"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_main_note"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_button"
+        android:textSize="20dp"
+        android:text="『小纸条』"/>
+    </RelativeLayout>
+
+
+

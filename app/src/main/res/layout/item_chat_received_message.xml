@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_10"
+    android:paddingTop="@dimen/margin_15" >
+    <!--接收时间-->
+    <TextView
+        android:id="@+id/tv_time"
+        android:background="@null"
+        android:textColor="#8c000143"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_11" >
+        <!--头像 修改-->
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/m0"
+            android:scaleType="fitXY" />
+        <!--收到消息的 气泡-->
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            style="@style/style_text_1e1e1e"
+            android:gravity="left|center"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:background="@drawable/chat_msg_left"
+            android:textColor="#f4fbff"
+            android:lineSpacingExtra="@dimen/margin_3"
+            android:minWidth="80dp"
+            android:maxWidth="225.0dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="@dimen/height_40"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

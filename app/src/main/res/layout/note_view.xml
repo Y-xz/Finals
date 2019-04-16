@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:background="@drawable/note_back">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--头像-->
+        <ImageButton
+            android:id="@+id/ib_note_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY" />
+        <!--竖线-->
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ib_note_avatar"
+            android:layout_centerHorizontal="true"
+            android:background="@color/tab"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_note"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--昵称-->
+                <TextView
+                    android:id="@+id/tv_notetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="昵称"
+                    android:textSize="15dp"
+                    android:textColor="@color/tab"/>
+                <!--时间-->
+                <TextView
+                    android:id="@+id/tv_notetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_notetitle"
+                    android:layout_marginLeft="10dp"
+                    android:text="时间"
+                    android:textSize="10dp"
+                    android:textColor="#07416e" />
+                <!--收藏-->
+                <Button
+                    android:id="@+id/btn_note_collection"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    android:textSize="20dp"
+                    android:text="☆"/>
+            </RelativeLayout>
+
+        <!--正文-->
+        <TextView
+            android:id="@+id/tv_notemsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="小纸条"
+            android:textColor="@color/tab"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_notegochat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="#00000000"
+                android:textSize="20dp"
+                android:hint="☏"/>
+            <Button
+                android:id="@+id/btn_note_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:hint="❤"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

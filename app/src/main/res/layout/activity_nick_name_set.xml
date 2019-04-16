@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_background">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/tab">
+
+        <Button
+            android:id="@+id/btn_nick_name_set_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity=""
+            android:text="←"
+            android:textSize="18sp"
+            android:textColor="@color/page_background"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/btn_nick_name_set_submit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#c8dfff"
+            android:background="@null"/>
+    </RelativeLayout>
+    <!--标题栏-->
+    <!--正文-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+        <!--设置昵称-->
+        <LinearLayout
+            android:id="@+id/rl_set_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white">
+            <EditText
+                android:id="@+id/et_set_nick_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:layout_alignParentLeft="true"
+                android:hint="NickName"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginLeft="5dp" />
+            <Button
+                android:id="@+id/btn_set_nick_name_remove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_alignParentRight="true"
+                android:text="清空"
+                android:background="@null"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

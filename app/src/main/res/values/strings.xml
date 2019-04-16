@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">小纸条</string>
+    <array name="tab_notes_title">
+        <item>正在聊</item>
+        <item>小纸条</item>
+        <item>关注</item>
+    </array>
+</resources>
